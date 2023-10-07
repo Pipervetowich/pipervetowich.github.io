@@ -1,0 +1,37 @@
+body {
+    background-image: url("jokic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    right: 80px;
+}
+
+.logo img {
+    max-width: 150%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.score {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 100px;
+    left: 200px;
+}
+
+.score img {
+    max-width: 800%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
