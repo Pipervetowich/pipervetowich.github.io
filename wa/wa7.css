@@ -56,6 +56,7 @@ body {
 
   .feature {
       width: 200px;
+      padding: 10px;
   }
 
   .photos {
@@ -63,3 +64,9 @@ body {
     grid-template-columns: 2fr 2fr;
     grid-gap: 1px;
   }
+
+@media screen and (max-height: 750px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
