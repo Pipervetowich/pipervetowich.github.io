@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(59, 13, 17);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+nav ul {
+    background-color: rgb(59, 13, 17);
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition-duration: .3s;
+}
+
+nav a:Hover {
+    color: rgb(112, 101, 99)
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px;
+    font-size: 36px;
+    color:#fff;
+    background-color: rgb(59, 13, 17);
+    padding: 5px;
+}
+
+h2 {
+    font-size: 34px;
+    color: #000000;
+    margin: 50px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 50px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 40px;
+}
+
+.concert {
+    background-color: #fff;
+    padding: 20px;
+    margin: 100px;
+    border: 1px solid #ddd;
+}
+
+.welcome {
+    text-align: center;
+    margin: 150px;
+}
+
+.About {
+    text-align: center;
+}
+
+div {
+    color:#333;
+}
+
+.div-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    margin: 100px;
+}
+
+@media screen and (max-width: 400px) {
+    
+    main {
+        padding: 10px;
+        
+      }
+    
+      h1 {
+        font-size: 28px;
+        margin: 30px; 
+      }
+    
+      h2 {
+        font-size: 24px;
+        margin: 20px;
+      }
+    
+      p {
+        font-size: 14px;
+        margin: 20px;
+      }
+    
+      ul {
+        list-style: disc;
+        margin-left: 10px;
+      }
+    }
