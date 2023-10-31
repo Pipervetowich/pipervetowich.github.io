@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Class Assignment 10</title>
+
+    <style>
+        button {
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgba(210, 28, 28, 0.6);
+            background-color: rgba(194, 70, 181, 0.6);
+            color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 2px rgb(0 0 200/0.4);
+            border-radius: 10px;
+            padding:3px 10px;
+            cursor: pointer;
+            height: 100px;
+            width: 150px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <button type="button">Click me to see the best NBA team!</button>
+    <button id="player" type="button">Who is the best Nuggets player?</button>
+
+    <script>
+        const button = document.querySelector("button");
+        const player = document.getElementById("player");
+
+        button.addEventListener('click', updateColor);
+        player.addEventListener('click', updateName)
+
+        function updateColor() {
+            document.body.style.background = "url(../wa/jokic.jpg)"
+        }
+
+        function updateName() {
+            let name = prompt("Enter player")
+            player.textContent = `Who is the best Nuggets player? ${name}`;
+        }
+    </script>
+</body>
+</html>
