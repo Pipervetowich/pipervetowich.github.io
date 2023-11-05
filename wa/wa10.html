@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="wa10.js" defer></script>
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        background-color: rgb(236, 226, 208);
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        width: 350px;
+      }
+
+      label {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        background: hsl(210, 78%, 79%);
+        color: #292625;
+        padding: 10px;
+        visibility: hidden;
+        border-color:#292625;
+        border-radius: 5px;
+      }
+    
+    button.randomize {
+      background-color: #ff5733;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.randomize:hover {
+      background-color: #ff714d;
+    }
+
+    p.story {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 24px;
+      background: #f5f5f5;
+      color: #333;
+      padding: 15px;
+      visibility: hidden;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 20px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+  </body>
+</html>
