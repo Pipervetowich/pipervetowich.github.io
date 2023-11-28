@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON: Task 1</title>
+</head>
+<body>
+
+    <script>
+        function displayCatInfo() {
+            // JSON data as a text string
+            const catString = `
+                {
+                    "cats": [
+                        {
+                            "name": "Fluffy",
+                            "kittens": [
+                                {"name": "Mittens", "gender": "male"},
+                                {"name": "Snowball", "gender": "female"}
+                            ]
+                        },
+                        {
+                            "name": "Whiskers",
+                            "kittens": [
+                                {"name": "Shadow", "gender": "male"},
+                                {"name": "Pumpkin", "gender": "female"}
+                            ]
+                        },
+                        {
+                            "name": "Mittens",
+                            "kittens": [
+                                {"name": "Tiger", "gender": "male"},
+                                {"name": "Daisy", "gender": "female"}
+                            ]
+                        }
+                    ]
+                }
+            `;
+
+            // Parse the JSON data
+            const catData = JSON.parse(catString);
+
+            // Variables to store information
+            let motherInfo = "";
+            let totalKittens = 0;
+            let maleKittens = 0;
+            let femaleKittens = 0;
+
+            // Loop through mother cats
+            for (let i = 0; i < catData.cats.length; i++) {
+                motherInfo += catData.cats[i].name;
+
+                // Check if there are more mother cats
+                if (i < catData.cats.length - 2) {
+                    motherInfo += ", ";
+                } else if (i === catData.cats.length - 2) {
+                    motherInfo += " and ";
+                } else {
+                    motherInfo += ". ";
+                }
+
+                // Loop through kittens
+                for (let j = 0; j < catData.cats[i].kittens.length; j++) {
+                    totalKittens++;
+                    if (catData.cats[i].kittens[j].gender === "male") {
+                        maleKittens++;
+                    } else {
+                        femaleKittens++;
+                    }
+                }
+            }
+
+            // Information to be displayed
+            const kittenInfo = `Total kittens: ${totalKittens}, Male kittens: ${maleKittens}, Female kittens: ${femaleKittens}`;
+
+            // Display information on the page
+            const para1 = document.createElement("p");
+            const para2 = document.createElement("p");
+            para1.textContent = motherInfo;
+            para2.textContent = kittenInfo;
+
+            document.body.appendChild(para1);
+            document.body.appendChild(para2);
+        }
+
+        // Call the function
+        displayCatInfo();
+    </script>
+
+</body>
+</html>
