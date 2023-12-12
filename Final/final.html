@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Enter Your Phone Number </title>
+
+    <link rel="stylesheet" href="final.css">
+    <script defer src="final.js"></script>
+
+</head>
+<body>
+
+    <h1>Pay a Fee to Enter Phone Number</h1>
+
+    <div>
+        <label for="ccnumber">Credit card number:</label>
+        <input id="ccnumber" type="text" placeholder="" />
+    </div>
+
+    <div>
+        <label for="date">Expiration date:</label>
+        <input id="date" type="text" placeholder="" />
+    </div>
+
+    <div>
+        <label for="cvv"> Security code:</label>
+        <input id="cvv" type="text" placeholder="" />
+    </div>
+
+    
+    <!-- <button onclick="submit()"> Submit</button> -->
+    <!-- <br></br> -->
+    <!-- <div id="text-entries-container"></div> -->
+
+    <label for="numberInput">Enter Your Phone Number:</label>
+    <input type="number" id="numberInput">
+    <button onclick="fee()"> Calculate Fee</button>
+    <br></br>
+    <div id="fee-entry"></div>
+
+    <p id="displayResult"></p>
+
+</body>
+</html>
