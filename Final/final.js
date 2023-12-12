@@ -17,3 +17,26 @@ function fee() {
     var displayResult = document.getElementById('displayResult');
     displayResult.textContent = 'Your fee is: $' + inputValue;
 }
+
+const btn = document.getElementById('submit');
+btn.addEventListener('click', () => displayMessage("Thank you for paying"));
+
+function displayMessage(msgText) {
+    const html = document.querySelector('html');
+
+    const panel = document.createElement('div');
+    panel.setAttribute('class','msgBox');
+    html.appendChild(panel);
+
+    const msg = document.createElement('p');
+    msg.textContent = msgText;
+    panel.appendChild(msg);
+
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = 'x';
+    panel.appendChild(closeBtn);
+
+    closeBtn.onclick = function() {
+      panel.parentNode.removeChild(panel);
+    }
+    }
