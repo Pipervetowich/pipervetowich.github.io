@@ -11,38 +11,25 @@
 </head>
 <body>
 
-    <h1>Pay a Fee to Enter Phone Number</h1>
+    <h1>Please Enter Phone Number</h1>
 
-    <div>
-        <label for="ccnumber">Credit card number:</label>
-        <input id="ccnumber" type="text" placeholder="" />
-    </div>
+    <input type="text" id="number" name="number" maxlength="10">
+    <br>
 
-    <div>
-        <label for="date">Expiration date:</label>
-        <input id="date" type="text" placeholder="" />
-    </div>
+    <button id="submit" onmouseover="setRandomPosition()" onclick="success()">Submit</button>
+    <button id="other" onmouseover="setRandomPosition2()" onclick="error()">Submit</button>
+    <button id="other1" onmouseover="setRandomPosition3()" onclick="error()">Submit</button>
+    <button id="other2" onmouseover="setRandomPosition4()" onclick="error()">Submit</button>
+    <button id="other3" onmouseover="setRandomPosition5()" onclick="error()">Submit</button>
+    <button id="other4" onmouseover="setRandomPosition6()" onclick="error()">Submit</button>
+    <button id="other5" onmouseover="setRandomPosition7()" onclick="error()">Submit</button>
+    <button id="other6" onmouseover="setRandomPosition8()" onclick="error()">Submit</button>
+    <button id="other7" onmouseover="setRandomPosition9()" onclick="error()">Submit</button>
+    <button id="other8" onmouseover="setRandomPosition10()" onclick="error()">Submit</button>
 
-    <div>
-        <label for="cvv"> Security code:</label>
-        <input id="cvv" type="text" placeholder="" />
-    </div>
+    <div id="pictureMeme">
+        <img src="meme.jpg" alt="Popup Image">
+      </div>
 
-    
-    <!-- <button onclick="submit()"> Submit</button> -->
-    <!-- <br></br> -->
-    <!-- <div id="text-entries-container"></div> -->
-
-    <label for="numberInput">Enter Your Phone Number:</label>
-    <input type="number" id="numberInput">
-    <button onclick="fee()"> Calculate Fee</button>
-    <br></br>
-    <div id="fee-entry"></div>
-
-    <p id="displayResult"></p>
-
-    <div class="popup">
-        <button id="submit"> Submit</button>
-    </div>
 </body>
 </html>

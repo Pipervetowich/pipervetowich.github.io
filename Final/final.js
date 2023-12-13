@@ -1,42 +1,128 @@
-// function submit() {
-    // JavaScript code to create a new text entry
-    // var textEntriesContainer = document.getElementById('text-entries-container');
-    // var newTextEntry = document.createElement('input');
-    // newTextEntry.type = 'text';
-    // textEntriesContainer.appendChild(newTextEntry);
-// }
+function setRandomPosition() {
+    var element = document.getElementById('submit');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
 
-function fee() {
-    // Get the input element by its ID
-    var numberInput = document.getElementById('numberInput');
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
 
-    // Get the value entered by the user
-    var inputValue = numberInput.value;
-
-    // Display the value in a paragraph element
-    var displayResult = document.getElementById('displayResult');
-    displayResult.textContent = 'Your fee is: $' + inputValue;
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
 }
 
-const btn = document.getElementById('submit');
-btn.addEventListener('click', () => displayMessage("Thank you for paying"));
+function setRandomPosition2() {
+    var element = document.getElementById('other');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
 
-function displayMessage(msgText) {
-    const html = document.querySelector('html');
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
 
-    const panel = document.createElement('div');
-    panel.setAttribute('class','msgBox');
-    html.appendChild(panel);
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
 
-    const msg = document.createElement('p');
-    msg.textContent = msgText;
-    panel.appendChild(msg);
+function setRandomPosition3() {
+    var element = document.getElementById('other1');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
 
-    const closeBtn = document.createElement('button');
-    closeBtn.textContent = 'x';
-    panel.appendChild(closeBtn);
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
 
-    closeBtn.onclick = function() {
-      panel.parentNode.removeChild(panel);
-    }
-    }
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition4() {
+    var element = document.getElementById('other2');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition5() {
+    var element = document.getElementById('other3');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition6() {
+    var element = document.getElementById('other4');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition7() {
+    var element = document.getElementById('other5');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition8() {
+    var element = document.getElementById('other6');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition9() {
+    var element = document.getElementById('other7');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function setRandomPosition10() {
+    var element = document.getElementById('other8');
+    var maxWidth = window.innerWidth - element.clientWidth;
+    var maxHeight = window.innerHeight - element.clientHeight;
+
+    var randomX = Math.floor(Math.random() * maxWidth);
+    var randomY = Math.floor(Math.random() * maxHeight);
+
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+}
+
+function success() {
+    alert('Sucsessfully Submitted!')
+    document.getElementById('pictureMeme').style.display = 'block'
+}
+
+function error() {
+    alert('Error Wrong Button')
+}
